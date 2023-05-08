@@ -26,8 +26,27 @@
       font-weight: bold;
     }
     #gradient-background {
-      background: linear-gradient(30deg,  #138808 33%, #ffffff 33%, #ffffff 66%, #FF9933 66%);
-      background: linear-gradient(300deg, );
+      background: linear-gradient(60deg,  #138808 33%, #ffffff 33%, #ffffff 66%, #FF9933 66%);
+      /* background: linear-gradient(300deg, ); */
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+  
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    #gradient-background1 {
+      background: linear-gradient(60deg,  #138808 33%, #5a3ad0 33%, #dc6d0c 66%, #FF9933 66%);
+      /* background: linear-gradient(300deg, ); */
       background-size: 180% 180%;
       animation: gradient-animation 18s ease infinite;
   
@@ -48,7 +67,7 @@
 </head>
 
 <body id="gradient-background">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="gradient-background1">
     <div class="container-fluid">
       <a class="navbar-brand text-info" href="#"><img src="./assets/InShot_20230506_171935468.jpg" width="50" alt="box image" height="50"> TrUpTi SuRvE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,11 +79,11 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./about.html"><b>About</b></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Social media account's
+              <b> Social media account's</b>
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item bg-danger text-white" href="https://youtube.com/@truptisurve0418"><img src="./assets/youtube.svg" alt="youtube-symbol"> youtube</a></li>
